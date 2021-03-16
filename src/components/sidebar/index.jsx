@@ -18,13 +18,49 @@ export default function Sidebar({ isOpen, toggle }) {
       </Icon>
       <SidebarWrapper>
         <SidebarMenu>
-          <SidebarLink to='about'>About</SidebarLink>
-          <SidebarLink to='discover'>Discover</SidebarLink>
-          <SidebarLink to='services'>Services</SidebarLink>
-          <SidebarLink to='signup'>Sign Up</SidebarLink>
+          <SidebarLink
+            to='about'
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact='true'
+            offset={-80}
+            onClick={() => toggle()}>
+            About
+          </SidebarLink>
+          <SidebarLink
+            to='aws'
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact='true'
+            offset={-80}
+            onClick={() => toggle()}>
+            AWS
+          </SidebarLink>
+          <SidebarLink
+            to='services'
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact='true'
+            offset={-80}
+            onClick={() => toggle()}>
+            Services
+          </SidebarLink>
+          <SidebarLink
+            to='signup'
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact='true'
+            offset={-80}
+            onClick={() => toggle()}>
+            Deployment
+          </SidebarLink>
         </SidebarMenu>
         <SideBtnWrap>
-          <SidebarRoute to='/signin'> Sign In </SidebarRoute>
+          <SidebarRoute to='/contactme'> Contact Me </SidebarRoute>
         </SideBtnWrap>
       </SidebarWrapper>
     </SidebarContainer>

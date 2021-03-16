@@ -78,4 +78,11 @@ export const ServicesH2 = styled.h2`
 export const ServicesP = styled.p`
   font-size: 1rem;
   text-align: center;
+  width: 100%;
+`;
+
+export const BtnWrap = styled.div`
+  display: flex;
+  justify-content: flex-start;
+  margin: 1rem;
 `;

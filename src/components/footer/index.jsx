@@ -10,6 +10,7 @@ import {
   SocialMedia,
   SocialMediaWrap,
   SocialIconLink,
+  FooterLinkS,
   SocialIcons,
   SocialLogo,
   WebsiteRights,
@@ -34,39 +35,51 @@ function Footer() {
         <FooterLinksContainer>
           <FooterLinksWrapper>
             <FooterLinksItems>
-              <FooterLinkTitle> About us </FooterLinkTitle>
-              <FooterLink to='/signin'>How it works</FooterLink>
-              <FooterLink to='/signin'>Testimonials</FooterLink>
-              <FooterLink to='/signin'>careers</FooterLink>
-              <FooterLink to='/signin'>Invertors</FooterLink>
-              <FooterLink to='/signin'>Terms of service</FooterLink>
+              <FooterLinkTitle> About Me </FooterLinkTitle>
+              <FooterLinkS
+                to='about'
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact='true'
+                offset={-80}>
+                About
+              </FooterLinkS>
+              <FooterLinkS
+                to='aws'
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact='true'
+                offset={-80}>
+                AWS (Amazon Web Services)
+              </FooterLinkS>
+              <FooterLinkS
+                to='services'
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact='true'
+                offset={-80}>
+                My Services
+              </FooterLinkS>
+              <FooterLinkS
+                to='signup'
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact='true'
+                offset={-80}>
+                Apps Deployment
+              </FooterLinkS>
             </FooterLinksItems>
-
+            <FooterLinksItems></FooterLinksItems>
+            <FooterLinksItems></FooterLinksItems>
             <FooterLinksItems>
-              <FooterLinkTitle> Contact us </FooterLinkTitle>
-              <FooterLink to='/signin'>Contact</FooterLink>
-              <FooterLink to='/signin'>Support</FooterLink>
-              <FooterLink to='/signin'>Destinations</FooterLink>
-              <FooterLink to='/signin'>Sponsorships</FooterLink>
-            </FooterLinksItems>
-          </FooterLinksWrapper>
-
-          <FooterLinksWrapper>
-            <FooterLinksItems>
-              <FooterLinkTitle> Videos </FooterLinkTitle>
-              <FooterLink to='/signin'>Submit video</FooterLink>
-              <FooterLink to='/signin'>Ambassadors</FooterLink>
-              <FooterLink to='/signin'>careers</FooterLink>
-              <FooterLink to='/signin'>Agency</FooterLink>
-              <FooterLink to='/signin'>Influencers</FooterLink>
-            </FooterLinksItems>
-
-            <FooterLinksItems>
-              <FooterLinkTitle> Social Media </FooterLinkTitle>
-              <FooterLink to='/signin'>Facebook</FooterLink>
-              <FooterLink to='/signin'>Twitter</FooterLink>
-              <FooterLink to='/signin'>Instagram</FooterLink>
-              <FooterLink to='/signin'>Youtube</FooterLink>
+              <FooterLinkTitle> Contact Me </FooterLinkTitle>
+              <FooterLink to='/contactme'>Send Message</FooterLink>
+              <FooterLink to='#'>contact@gulfarazhassan.com</FooterLink>
+              <FooterLink to='#'>+92 3060052374</FooterLink>
             </FooterLinksItems>
           </FooterLinksWrapper>
         </FooterLinksContainer>
@@ -74,14 +87,14 @@ function Footer() {
         <SocialMedia>
           <SocialMediaWrap>
             <SocialLogo to='/' onClick={toggleHome}>
-              TabeebGhar
+              Gulfaraz Hassan
             </SocialLogo>
             <WebsiteRights>
-              tabeebghar c {new Date().getFullYear()}
+              gulfarazhassan c {new Date().getFullYear()}
               All RightReserver.
             </WebsiteRights>
             <SocialIcons>
-              <SocialIconLink href='/' target='_blank' aria-label='Facebook'>
+              {/* <SocialIconLink href='/' target='_blank' aria-label='Facebook'>
                 <FaFacebook />
               </SocialIconLink>
               <SocialIconLink href='/' target='_blank' aria-label='Twitter'>
@@ -95,7 +108,7 @@ function Footer() {
               </SocialIconLink>
               <SocialIconLink href='/' target='_blank' aria-label='Youtube'>
                 <FaYoutube />
-              </SocialIconLink>
+              </SocialIconLink> */}
             </SocialIcons>
           </SocialMediaWrap>
         </SocialMedia>

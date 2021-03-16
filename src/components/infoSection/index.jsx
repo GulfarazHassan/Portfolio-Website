@@ -1,5 +1,6 @@
 import React from "react";
-import { Button } from "../ButtonElement";
+import { Button } from "../BottonElementA";
+import CV from "../../images/cv/gulfaraz.pdf";
 import {
   Column2,
   ImgWrap,
@@ -42,7 +43,8 @@ export default function InfoSection({
               <Subtitle darkText={darkText}>{description}</Subtitle>
               <BtnWrap>
                 <Button
-                  to='home'
+                  href={CV}
+                  download
                   smooth={true}
                   duration={500}
                   spy={true}

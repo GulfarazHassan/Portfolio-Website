@@ -39,7 +39,7 @@ const Navbar = ({ toggle }) => {
         <Nav scrollNav={scrollNav}>
           <NavbarContainer>
             <NavLogo to='/' onClick={toggleHome}>
-              TabeebGhar
+              Gulfaraz Hassan
             </NavLogo>
             <MobileIcon onClick={() => toggle()}>
               <FaBars />
@@ -58,13 +58,13 @@ const Navbar = ({ toggle }) => {
               </NavItem>
               <NavItem>
                 <NavLink
-                  to='discover'
+                  to='aws'
                   smooth={true}
                   duration={500}
                   spy={true}
                   exact='true'
                   offset={-80}>
-                  Discover
+                  AWS
                 </NavLink>
               </NavItem>
               <NavItem>
@@ -86,12 +86,12 @@ const Navbar = ({ toggle }) => {
                   spy={true}
                   exact='true'
                   offset={-80}>
-                  SingUp
+                  Deployment
                 </NavLink>
               </NavItem>
             </NavMenu>
             <NavBtn>
-              <NavBtnLink to='/signin'>SignIn</NavBtnLink>
+              <NavBtnLink to='/contactme'>Contact Me</NavBtnLink>
             </NavBtn>
           </NavbarContainer>
         </Nav>

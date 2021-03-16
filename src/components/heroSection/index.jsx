@@ -10,9 +10,9 @@ import {
   ArrowRight,
   HeroBtnWrapper,
 } from "./heroElements";
-import { Button } from "../ButtonElement";
+import { Button } from "../BottonElementA";
 import Video from "../../videos/video.mp4";
-
+import CV from "../../images/cv/gulfaraz.pdf";
 export default function HeroSection() {
   const [hover, setHover] = useState(false);
 
@@ -25,16 +25,24 @@ export default function HeroSection() {
         <VideoBg autoPlay loop muted src={Video} type='video/mo4' />
       </HeroBg>
       <HeroContent>
-        <HeroH1>Virtual Baning made easy</HeroH1>
-        <HeroP>Sing up today to get $250 for your next banking.</HeroP>
+        <HeroH1>
+          MERN(MongoDb, ExpressJs, ReactJS, NodeJS) Stack & React Native
+        </HeroH1>
+        <HeroP>Full stack web development & Mobile development</HeroP>
         <HeroBtnWrapper>
           <Button
-            to='signup'
+            href={CV}
+            download
             onMouseEnter={onHover}
             onMouseLeave={onHover}
             primary='true'
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact='true'
+            offset={-80}
             dark='true'>
-            Get started {hover ? <ArrowForward /> : <ArrowRight />}
+            Downloade my CV {hover ? <ArrowForward /> : <ArrowRight />}
           </Button>
         </HeroBtnWrapper>
       </HeroContent>
